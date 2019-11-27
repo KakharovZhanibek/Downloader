@@ -1,0 +1,23 @@
+﻿<Window x:Class="Downloader.DownloadDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Downloader"
+        mc:Ignorable="d"
+        Title="DownloadDetails" Height="450" Width="800">
+    <StackPanel>
+        <WrapPanel HorizontalAlignment="Center">
+            <TextBox Margin="20" Width="300"></TextBox>
+            <Button Content="Search" Height="25"></Button>
+        </WrapPanel>
+        <StackPanel HorizontalAlignment="Center">
+            <Label x:Name="lblName" Visibility="Hidden"></Label>
+            <Label x:Name="lblAuthor" Visibility="Hidden"></Label>
+            <Label x:Name="lblDuration" Visibility="Hidden"></Label>
+            <Label x:Name="lblSize" Visibility="Hidden"></Label>
+            <Label x:Name="lblFormat" Visibility="Hidden"></Label>
+        </StackPanel>
+        <Button x:Name="AddVideo_Btn" Width="60" HorizontalAlignment="Right" Margin="20">Add</Button>
+    </StackPanel>
+</Window>
